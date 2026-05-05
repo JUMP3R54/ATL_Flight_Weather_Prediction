@@ -13,4 +13,5 @@ The model notebook contains code for training and testing machine learning model
 The final models are intended to work as risk-estimation tools rather than perfect prediction systems. The delay models show moderate performance, while the cancellation model ranks cancellation risk well but struggles with precision because cancellations are rare in the dataset.
 
 Link to Flight dataset: https://www.kaggle.com/datasets/hrishitpatil/flight-data-2024?select=flight_data_2024.csv
-Weather Data Set: 
+Weather Data Set: https://www.wunderground.com/history/monthly/us/ga/atlanta/KATL/date/2024-1
+
