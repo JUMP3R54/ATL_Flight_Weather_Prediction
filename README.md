@@ -1,6 +1,7 @@
 # Analysis and Prediction of Flight Delays in the U.S.
 
 Joseph Lakatos
+
 This repository shows how to clean, explore, visualize, and model U.S. flight data in order to predict flight delays and cancellations. The project uses supervised machine learning models to estimate whether a flight is likely to have a departure delay, arrival delay, or cancellation based on available flight and airport-related features.
 
 USAGE:
