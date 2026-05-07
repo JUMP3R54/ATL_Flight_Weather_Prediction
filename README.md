@@ -66,25 +66,7 @@ At the start of each notebook, run the Google Drive mount cell so Colab can acce
 
 ## How to Run the Notebooks
 
-### 1. Cleanup Notebook
-Notebook: `cs210ATL_cleanup.ipynb`
-
-This notebook:
-- loads the raw flight data
-- filters the national dataset down to ATL-related flights
-- cleans and reduces the columns
-- prepares weather data
-- joins flight and weather data
-- creates derived fields such as:
-  - weather severity flag
-  - delay indicators
-  - cancellation-related columns
-
-Run this notebook first if you want to reproduce the full cleaning pipeline from the original datasets.
-
----
-
-### 2. Visuals Notebook
+### Visuals Notebook
 Notebook: `ATL_Flight_Weather_Visuals.ipynb`
 
 This notebook uses the cleaned joined dataset to:
@@ -101,7 +83,7 @@ To run it:
 
 ---
 
-### 3. Models Notebook
+###  Models Notebook
 Notebook: `cs210ATL_Learning_Models.ipynb`
 
 This notebook:
