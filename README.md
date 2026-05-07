@@ -19,7 +19,16 @@ Cleaned Data Set:  atl_joined_weather_flights_2024  ZIP  is our cleaned data (IN
 
 
 
-**HOW TO RUN OUR MODELS / UI**
+**HOW TO RUN OUR Visuals Notebook**
 Make sure you install our dataset atl_joined_weather_flights_2024 and unZIP the file and place it into your Google Drive 
 dierectory : /content/drive/MyDrive/
-Run our Mount Google Drive code, then run our Training Model Data code, after you can either go through or models and train them seperately if you'd like our go all the way to our final model and train it.
+Also make sure you install our pickeled final model 
+Run our Mount Google Drive code, and you should be able to run all our graphs 
+
+**HOW TO RUN OUR MODELS**
+
+Make sure you install our dataset atl_joined_weather_flights_2024 and unZIP the file and place it into your Google Drive 
+dierectory : /content/drive/MyDrive/
+Run our Mount Google Drive code, then run our Training Model Data code section, after you can either go through our models and train them seperately if you'd like our go all the way to our final model and train it.
+
+**HOW TO RUN OUR UI in models NOTEBOOK**
