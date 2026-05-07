@@ -20,9 +20,10 @@ Cleaned Data Set:  atl_joined_weather_flights_2024  ZIP  is our cleaned data (IN
 
 
 **HOW TO RUN OUR Visuals Notebook**
+
 Make sure you install our dataset atl_joined_weather_flights_2024 and unZIP the file and place it into your Google Drive 
 dierectory : /content/drive/MyDrive/
-Also make sure you install our pickeled final model 
+Also make sure you install our pickeled final model in (flight_models.zip) and also place it in Google Drive
 Run our Mount Google Drive code, and you should be able to run all our graphs 
 
 **HOW TO RUN OUR MODELS**
@@ -31,4 +32,7 @@ Make sure you install our dataset atl_joined_weather_flights_2024 and unZIP the 
 dierectory : /content/drive/MyDrive/
 Run our Mount Google Drive code, then run our Training Model Data code section, after you can either go through our models and train them seperately if you'd like our go all the way to our final model and train it.
 
-**HOW TO RUN OUR UI in models NOTEBOOK**
+**HOW TO RUN OUR UI At the end of learningModels NOTEBOOK**
+Make sure you have our pickeled final model in (flight_models.zip) installed and also place it in Google Drive
+RUN the Model User Interface code,  then you should be able to run all the Example predictions
+At the end of the Notebook there is "RUN this code box for User Inputs (UI)" run it and you can input your own flight and weather data to predict teh flights delays/cancellations
