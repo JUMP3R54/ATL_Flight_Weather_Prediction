@@ -16,3 +16,10 @@ Link to Flight dataset: https://www.kaggle.com/datasets/hrishitpatil/flight-data
 Weather Data Set: https://www.wunderground.com/history/monthly/us/ga/atlanta/KATL/date/2024-1
 
 Cleaned Data Set:  atl_joined_weather_flights_2024  ZIP  is our cleaned data (IN FILES)  This is after running our orginal 1.31gb fight file through our cleanup code.  **Unable to upload our uncleaned datasets due to them being to large even being ZIPed**
+
+
+
+**HOW TO RUN OUR MODELS / UI**
+Make sure you install our dataset atl_joined_weather_flights_2024 and unZIP the file and place it into your Google Drive 
+dierectory : /content/drive/MyDrive/
+Run our Mount Google Drive code, then run our Training Model Data code, after you can either go through or models and train them seperately if you'd like our go all the way to our final model and train it.
