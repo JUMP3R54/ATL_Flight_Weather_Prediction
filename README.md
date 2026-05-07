@@ -42,7 +42,7 @@ RUN the Model User Interface code,  then you should be able to run all the Examp
 At the end of the Notebook there is "RUN this code box for User Inputs (UI)" run it and you can input your own flight and weather data to predict The flights delays/cancellations
 
 
-## Setup Instructions
+## Setup Instructions (more indepth)
 
 This project was built in **Google Colab**.
 
