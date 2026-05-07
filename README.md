@@ -79,7 +79,7 @@ This notebook uses the cleaned joined dataset to:
 - generate the graphs used in the report
 
 To run it:
-1. make sure `atl_joined_weather_flights_2024.csv` is in Google Drive also `flight_models.zip`
+1. make sure `atl_joined_weather_flights_2024.csv` is in Google Drive and  `flight_models.pkl`
 2. run the mount Google Drive cell
 3. run the notebook cells in order
 
