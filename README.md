@@ -40,3 +40,123 @@ Make sure you have our pickeled final model in (flight_models.zip) installed and
 RUN the Model User Interface code,  then you should be able to run all the Example predictions
 
 At the end of the Notebook there is "RUN this code box for User Inputs (UI)" run it and you can input your own flight and weather data to predict The flights delays/cancellations
+
+
+## Setup Instructions
+
+This project was built in **Google Colab**.
+
+### Step 1: Upload files to Google Drive
+Upload the following files to:
+
+`/content/drive/MyDrive/`
+
+Required files:
+- `atl_joined_weather_flights_2024.zip`  
+- `flight_models.zip` (needed for the final prediction demo)
+
+Then unzip them in Google Drive if needed so the notebooks can access:
+- `atl_joined_weather_flights_2024.csv`
+- `flight_models.pkl`
+
+### Step 2: Mount Google Drive
+At the start of each notebook, run the Google Drive mount cell so Colab can access the files stored in Drive.
+
+---
+
+## How to Run the Notebooks
+
+### 1. Cleanup Notebook
+Notebook: `cs210ATL_cleanup.ipynb`
+
+This notebook:
+- loads the raw flight data
+- filters the national dataset down to ATL-related flights
+- cleans and reduces the columns
+- prepares weather data
+- joins flight and weather data
+- creates derived fields such as:
+  - weather severity flag
+  - delay indicators
+  - cancellation-related columns
+
+Run this notebook first if you want to reproduce the full cleaning pipeline from the original datasets.
+
+---
+
+### 2. Visuals Notebook
+Notebook: `ATL_Flight_Weather_Visuals.ipynb`
+
+This notebook uses the cleaned joined dataset to:
+- explore delay and cancellation patterns
+- compare airlines
+- compare weather severity levels
+- analyze delay rates by departure hour
+- generate the graphs used in the report
+
+To run it:
+1. make sure `atl_joined_weather_flights_2024.csv` is in Google Drive
+2. run the mount Google Drive cell
+3. run the notebook cells in order
+
+---
+
+### 3. Models Notebook
+Notebook: `cs210ATL_Learning_Models.ipynb`
+
+This notebook:
+- loads the cleaned merged dataset
+- trains several machine learning model attempts
+- compares model outputs
+- builds final models for:
+  - departure delay
+  - arrival delay
+  - cancellation
+- includes a small prediction demo / user interface at the end
+
+To run it:
+1. make sure `atl_joined_weather_flights_2024.csv` is in Google Drive
+2. run the mount Google Drive cell
+3. run the model training cells in order
+
+If you want to use the saved final models instead of retraining, place:
+- `flight_models.pkl`
+
+in Google Drive and run the model-loading / UI section.
+
+---
+
+## How to Run the Final Prediction Demo
+
+At the end of the models notebook, there is a user input section.
+
+To use it:
+1. make sure `flight_models.pkl` is in Google Drive
+2. run the code cell that loads the pickled models
+3. run the prediction helper function cells
+4. run the example prediction cells or the user input cell
+
+The demo allows you to enter:
+- month
+- airline code
+- origin airport
+- destination airport
+- scheduled departure time
+- distance
+- forecast average wind speed
+- forecast precipitation total
+
+The model then returns:
+- departure delay probability
+- arrival delay probability
+- cancellation probability
+
+and the threshold-based yes/no prediction for each one.
+
+---
+
+## Notes
+
+- Valid airline and airport codes matter for the prediction demo.
+- The weather data is **daily**, not hourly, so the predictions should be interpreted as **same-day disruption risk estimates** rather than exact minute-by-minute forecasts.
+- The cancellation model ranks cancellation risk better than it classifies exact cancellations, since cancellations are rare in the dataset.
